@@ -53,9 +53,9 @@ function compareCharacterData(charName, charRealm) {
                 myNode.removeChild(myNode.firstChild);
             }
             JSON.stringify(data);   //create JSON array object
-            var test = document.createElement('p');
-            test.innerHTML = data['name'];
-            myNode.appendChild(test);
+            var test = document.createElement('p'); //test paragraph element
+            test.innerHTML = data['name'];  //place the name of submitted character into the test element
+            myNode.appendChild(test);   //add the paragraph element to the mid div
         });
     }
 }
