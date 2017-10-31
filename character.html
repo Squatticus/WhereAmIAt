@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="characterComparisonDiv">
+    <div id="leftside" class="column side">
+        <p></p>
+    </div>
+    <div id="mid" class="column middle">
+        <h2>Please Enter a Character You Wish To Compare to Squatticus</h2>
+        <p>Character Name: <input id="charName"></p>
+        <p>Realm: <input id="realmName"></p>
+        <button onclick="compareCharacterData(document.getElementById('charName').value, document.getElementById('realmName').value)" id="compareChar">Compare!</button>
+        <p id="compError"></p>
+    </div>
+    <div id="rightside" class="column side">
+        <p></p>
+    </div>
+</div>
+<div id="sidebyside">
+    <div class="column middle">
+        <h2>Side1</h2>
+    </div>
+    <div class="column middle">
+        <h2>Side 2</h2>
+    </div>
+</div>
+</body>
+</html>
