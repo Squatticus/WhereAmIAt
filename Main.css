@@ -65,6 +65,13 @@ body{
     margin: 0 0 0 12px;
 }
 
+#ContentContainer {
+    background-image: url(https://worldofwarcraft.akamaized.net/static/components/Pane/Pane-dirtDark.jpg);
+    width: auto;
+    min-width: 80%;
+    height: auto;
+    min-height: 50%;
+}
 /* Create three unequal columns that floats next to each other */
 .column {
     float: left;
