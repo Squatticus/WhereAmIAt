@@ -44,9 +44,14 @@ function compareCharacterData(charName, charRealm) {
      *************************************************************************************/
 
     if(charName !== "" && charRealm !== ""){    //check if empty strings
-        var URL = "https://us.api.battle.net/wow/character/"+charRealm+"/"+charName+"?locale=en_US&apikey=vhamuv4qktrbzp8hrdamtxkkrps4tv96"
+        var URL = "https://us.api.battle.net/wow/character/"+charRealm+"/"+charName+"?locale=en_US&apikey=vhamuv4qktrbzp8hrdamtxkkrps4tv96";
         //get response from the API url
         $.getJSON(URL, function (data) {
+            //find the <div id='mid'> and empty it
+            var myNode = document.getElementById("mid");
+            while (myNode.firstChild) {
+                myNode.removeChild(myNode.firstChild);
+            }
             JSON.stringify(data);   //create JSON array object
         });
     }
