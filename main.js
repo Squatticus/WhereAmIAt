@@ -53,6 +53,9 @@ function compareCharacterData(charName, charRealm) {
                 myNode.removeChild(myNode.firstChild);
             }
             JSON.stringify(data);   //create JSON array object
+            var test = document.createElement('p');
+            test.innerHTML = data['name'];
+            myNode.appendChild(test);
         });
     }
 }
