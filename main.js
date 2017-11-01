@@ -7,12 +7,13 @@ This also handles the click functions for the Nav Menu.
 function def() {
     //On Webpage load's the default text to ContentContainer Container Div
     $('#ContentContainer').load('onload.html #loadstuff');
+	$(home).addClass("using").siblings("a").removeClass("using");
     //Handler for a click even on a piece of the Nav Menu
     $("div a").click(function () {
 		//If the Home item is clicked
         if(this.id === "home"){
             //load in the character comparison div from the Char file
-            $('#ContentContainer').load('onload.html #characterComparisonDiv');
+            $('#ContentContainer').load('onload.html #loadstuff');
         }
         //If the Character item is clicked
         if(this.id === "char"){
