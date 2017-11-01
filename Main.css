@@ -70,7 +70,7 @@ body{
     width: auto;
     min-width: 80%;
     height: auto;
-    min-height: 50%;
+    min-height: 500px;
 }
 /* Create three unequal columns that floats next to each other */
 .column {
