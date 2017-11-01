@@ -86,15 +86,17 @@ function compareCharacterData(charName, charRealm) {
             while (myNode.firstChild) {
                 myNode.removeChild(myNode.firstChild);
             }
-            var newNode = document.createElement('p'); //create paragraph element
             //place character name into mid
-            newNode.innerHTML = charData['name'];  //place the name of submitted character into the paragraph element
+            var charNode = document.createElement('p'); //create paragraph element
+            charNode.innerHTML = charData['name'];  //place the name of submitted character into the paragraph element
             myNode.appendChild(newNode);   //add the paragraph element to the mid div
             //place character realm into mid
-            newNode.innerHTML = charData['realm'];  //place the name of submitted character into the paragraph element
+            var realmNode = document.createElement('p'); //create paragraph element
+            realmNode.innerHTML = charData['realm'];  //place the name of submitted character into the paragraph element
             myNode.appendChild(newNode);   //add the paragraph element to the mid div
             //place character level into mid
-            newNode.innerHTML = charData['level'];  //place the name of submitted character into the paragraph element
+            var levelNode = document.createElement('p'); //create paragraph element
+            levelNode.innerHTML = charData['level'];  //place the name of submitted character into the paragraph element
             myNode.appendChild(newNode);   //add the paragraph element to the mid div
             //place character gender into mid
             //place character race into mid
