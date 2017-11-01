@@ -50,7 +50,8 @@ function compareCharacterData(charName, charRealm) {
     /*************************************************************************************
      * This function will retrieve and parse the JSON representation of a character profile from
      * the Blizzard API. Once the data has been parsed it will be used to manipulate the DOM elements
-     * creating the contents of the character comparison body.
+     * creating the contents of the character comparison body. This function will also load in the
+     * main character render provided by Blizzard
      *************************************************************************************/
 
     if(charName !== "" && charRealm !== ""){    //check if empty strings
@@ -63,9 +64,13 @@ function compareCharacterData(charName, charRealm) {
                 myNode.removeChild(myNode.firstChild);
             }
             JSON.stringify(data);   //create JSON array object
-            var test = document.createElement('p'); //test paragraph element
-            test.innerHTML = data['name'];  //place the name of submitted character into the test element
-            myNode.appendChild(test);   //add the paragraph element to the mid div
+
+            var dataField = ['name','realm','class','race','gender','level','faction'];
+            dataField.forEach(function (t) {
+                var newNode = document.createElement('p'); //test paragraph element
+                newNode.innerHTML = data[t];  //place the name of submitted character into the test element
+                myNode.appendChild(newNode);   //add the paragraph element to the mid div
+            })
         });
     }
 }
