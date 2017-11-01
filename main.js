@@ -132,8 +132,8 @@ function compareCharacterData(charName, charRealm) {
             charJPG = charData['thumbnail'];
             squatJPG = squatData['thumbnail'];
 
-            charJPG.replace("avatar", "main");
-            squatJPG.replace("avatar", "main");
+            charJPG = charJPG.replace("avatar", "main");
+            squatJPG = squatJPG.replace("avatar", "main");
 
             var charImg = document.createElement('img');    //create image element
             var squatImg = document.createElement('img');   //create image element
