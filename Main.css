@@ -1,6 +1,7 @@
 body{
     background-color: #170e09;
     color: #ebdec2;
+	font-family: OpenSans;
 }
 
 @font-face {
@@ -16,10 +17,6 @@ body{
 @font-face {
 	font-family: OpenSansBold;
 	src: url(https://worldofwarcraft.akamaized.net/static/fonts/opensans-bold.woff);
-}
-
-* {
-	font-family: OpenSans;
 }
 
 h2 {
