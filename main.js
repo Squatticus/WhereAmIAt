@@ -9,27 +9,36 @@ function def() {
     $('#ContentContainer').load('onload.html #loadstuff');
     //Handler for a click even on a piece of the Nav Menu
     $("div a").click(function () {
+		//If the Home item is clicked
+        if(this.id === "home"){
+            //load in the character comparison div from the Char file
+            $('#ContentContainer').load('onload.html #characterComparisonDiv');
+        }
         //If the Character item is clicked
         if(this.id === "char"){
             //load in the character comparison div from the Char file
             $('#ContentContainer').load('character.html #characterComparisonDiv');
         }
+		//If the Achievement item is clicked
         if(this.id === "achi"){
             //load in the achievement comparison div from the Achi file
             $('#ContentContainer').load('achievement.html #dummy');
         }
+		//If the Itmes item is clicked
         if(this.id === "item"){
             //load in the achievement comparison div from the Item file
             $('#ContentContainer').load('items.html #dummy');
         }
+		//If the PvP item is clicked
         if(this.id === "pvp"){
             //load in the achievement comparison div from the PvP file
             $('#ContentContainer').load('pvp.html #dummy');
         }
+		//If the Character item is clicked
         if(this.id === "prog"){
             //load in the achievement comparison div from the PvE file
             $('#ContentContainer').load('pve.html #dummy');
-            getCharProfile();
+            //getCharProfile();
         }
         //apply using class to the clicked nav menu item and remove using from other
         $(this).addClass("using").siblings("a").removeClass("using");

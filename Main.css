@@ -63,8 +63,8 @@ h2 {
 }
 /* Links - change color on hover */
 .menu a:hover {
-    color: #211510;
-    background-color: #f8b700;
+    color: #ffffff;
+    border-color: #f8b700;
 }
 
 .menu a.using {
