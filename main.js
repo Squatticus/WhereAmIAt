@@ -8,6 +8,20 @@ function def() {
     //On Webpage load's the default text to ContentContainer Container Div
     $('#ContentContainer').load('onload.html #loadstuff');
     $(home).addClass("using").siblings("a").removeClass("using");
+    var left = document.getElementById("leftside");
+    var right = document.getElementById("rightside");
+    while (left.firstChild) {left.removeChild(left.firstChild);}    //empty left
+    while (right.firstChild) {right.removeChild(right.firstChild);} //empty right
+    
+    var LImg = document.createElement('img');   //create image element
+    var RImg = document.createElement('img');   //create image element
+    RImg.setAttribute("src", "http://media.blizzard.com/wow/warlords-of-draenor-6y1fz/models/undead/male/image-2-full.jpg");
+    RImg.setAttribute("class", "imgcol");   //give element class
+    LImg.setAttribute("src", "http://media.blizzard.com/wow/warlords-of-draenor-6y1fz/models/human/male/image-3-full.jpg");
+    LImg.setAttribute("class", "imgcol");   //give element class
+
+    left.appendChild(LImg);
+    right.appendChild(RImg);
     //Handler for a click even on a piece of the Nav Menu
     $("div a").click(function () {
         //If the Home item is clicked
@@ -44,20 +58,6 @@ function def() {
         //apply using class to the clicked nav menu item and remove using from other
         $(this).addClass("using").siblings("a").removeClass("using");
     });
-     var left = document.getElementById("leftside");
-     var right = document.getElementById("rightside");
-     while (left.firstChild) {left.removeChild(left.firstChild);}    //empty left
-     while (right.firstChild) {right.removeChild(right.firstChild);} //empty right
-    
-     var LImg = document.createElement('img');    //create image element
-     var RImg = document.createElement('img');   //create image element
-     RImg.setAttribute("src", "http://media.blizzard.com/wow/warlords-of-draenor-6y1fz/models/undead/male/image-2-full.jpg");
-     RImg.setAttribute("class", "imgcol");    //give element class
-     LImg.setAttribute("src", "http://media.blizzard.com/wow/warlords-of-draenor-6y1fz/models/human/male/image-3-full.jpg");
-     LImg.setAttribute("class", "imgcol");   //give element class
-
-     left.appendChild(LImg);
-     right.appendChild(RImg);
 }
 
 function compareCharacterData(charName, charRealm) {
