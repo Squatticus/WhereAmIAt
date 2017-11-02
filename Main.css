@@ -50,11 +50,13 @@ h2 {
 #rightdef {
     background-image: url(http://media.blizzard.com/wow/warlords-of-draenor-6y1fz/models/undead/male/image-2-full.jpg);
     background-position: 50%, 50%;
+    height: 513px;
 }
 
 #leftdef {
     background-image: url(http://media.blizzard.com/wow/warlords-of-draenor-6y1fz/models/human/male/image-3-full.jpg);
     background-position: 50%, 50%;
+    height: 513px;
 }
 
 /* The navbar container */
