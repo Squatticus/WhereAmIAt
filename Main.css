@@ -42,11 +42,12 @@ h2 {
 }
 .imgcol{
     transform: translate(-37%,-25%);
+    padding: 2px;
 }
 
 /* The navbar container */
 .menu {
-    overflow: hidden;
+    overflow: visible;
     height: 150px;
     line-height: 32px;
     width: 1335px;
@@ -54,6 +55,7 @@ h2 {
     position: relative;
     text-align: center;
     top: -50px;
+    padding: 0;
 }
 
 #topnav {
@@ -66,6 +68,7 @@ h2 {
     width: 263px;
     height: 150px;
     float: left;
+    overflow: visible;
 }
 
 #rightcap {
@@ -73,6 +76,7 @@ h2 {
     width: 263px;
     height: 150px;
     float: right;
+    overflow: visible;
 }
 
 #midItems {
