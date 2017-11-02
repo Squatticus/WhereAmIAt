@@ -19,6 +19,11 @@ body{
 	src: url(https://worldofwarcraft.akamaized.net/static/fonts/opensans-bold.woff);
 }
 
+@font-face {
+    font-family: PermMarker;
+    src: url(https://fonts.gstatic.com/s/permanentmarker/v7/9vYsg5VgPHKK8SXYbf3sMsW72xVeg1938eUHStY_AJ4.woff2);
+}
+
 h2 {
 	font-family: OpenSansBold;
 }
@@ -27,6 +32,7 @@ h2 {
     text-align: center;
     font-family: Semplicita;
     background-image: url(https://bnetcmsus-a.akamaihd.net/cms/template_resource/5ZB6M021WNEZ1465955329787.jpg);
+    filter: hue-rotate(170deg);
     padding: 5em;
     background-position: 50%, 50%;
     color: white;
@@ -41,43 +47,80 @@ h2 {
 /* The navbar container */
 .menu {
     overflow: hidden;
-    background-image: url(https://worldofwarcraft.akamaized.net/static/components/SiteNav/sitenav-bar-bg.jpg);
-    background-color: #211510;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
-    border-style: solid;
-    border-width: 1px;
-    border-color: #352011;
+    height: 150px;
+    line-height: 32px;
+    width: 1335px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: -50px;
+}
+
+#topnav {
+    height: 32px;
+    top: 11px;
+}
+
+#leftcap {
+    background-image: url(http://us.battle.net/wow/static/images/warlords-of-draenor-6y1fz/nav/nav-endcap-left.png);
+    width: 263px;
+    height: 150px;
+    float: left;
+}
+
+#rightcap {
+    background-image: url(http://us.battle.net/wow/static/images/warlords-of-draenor-6y1fz/nav/nav-endcap-right.png);
+    width: 263px;
+    height: 150px;
+    float: right;
+}
+
+#midItems {
+    background-image: url(http://us.battle.net/wow/static/images/warlords-of-draenor-6y1fz/nav/bg-nav-bar-mid.png);
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    width: 822px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    float: middle;
 }
 /* Navbar links */
 .menu a {
-    font-family: Semplicita;
+    font-family: 'PermMarker';
+    font-size: 22px;
+    text-shadow: 0px .5px 0px rgba(200,200,200,.3), 0px -1px 0px rgba(0,0,0,.7);
+    top: 43px;
+    height: 63px;
     float: left;
-    display: block;
+    display: inline-block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 16px;
     text-decoration: none;
-    color: #f8b700;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #211510;
+    color: rgb(229, 49, 1);
 }
 /* Links - change color on hover */
 .menu a:hover {
-    color: #ffffff;
-    border-color: #f8b700;
+    color: rgb(255, 126, 0);
 }
 
 .menu a.using {
-    color: #211510;
-    background-color: #f8b700;
+    color: rgb(255, 126, 0);
 }
 
 #wowsite {
+    top: 13px;
+    position: relative;
     background-image: url(https://blznav.akamaized.net/img/games/logo-mobile-wow-e09169bb480f819c.png);
     float: right;
+    overflow: hidden;
     padding: 24px 24px;
-    overflow: visible;
     margin: 0 0 0 12px;
+    background-repeat: no-repeat;
 }
 
 #ContentContainer {
