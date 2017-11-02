@@ -48,6 +48,9 @@ function def() {
      var right = document.getElementById("rightside");
      while (left.firstChild) {left.removeChild(left.firstChild);}    //empty left
      while (right.firstChild) {right.removeChild(right.firstChild);} //empty right
+    
+     var LImg = document.createElement('img');    //create image element
+     var RImg = document.createElement('img');   //create image element
      RImg.setAttribute("src", "http://media.blizzard.com/wow/warlords-of-draenor-6y1fz/models/undead/male/image-2-full.jpg");
      RImg.setAttribute("class", "imgcol");    //give element class
      LImg.setAttribute("src", "http://media.blizzard.com/wow/warlords-of-draenor-6y1fz/models/human/male/image-3-full.jpg");
