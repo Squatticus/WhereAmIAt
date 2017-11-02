@@ -8,9 +8,6 @@ function def() {
     //On Webpage load's the default text to ContentContainer Container Div
     $('#ContentContainer').load('onload.html #loadstuff');
     $(home).addClass("using").siblings("a").removeClass("using");
-    var left = document.getElementById("leftside");
-    var right = document.getElementById("rightside");
-    while (left.firstChild) {left.removeChild(left.firstChild);}    //empty left
     //Handler for a click even on a piece of the Nav Menu
     $("div a").click(function () {
         //If the Home item is clicked
