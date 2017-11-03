@@ -149,8 +149,10 @@ function compareCharacterData(charName, charRealm) {
 
             left.appendChild(squatImg);
             right.appendChild(charImg);
-			document.getEelementById("leftPlayerText").innerHTML = "Squatticus" + "<br>" + "Wyrmrest Accord";
-			document.getEelementById("rightPlayerText").innerHTML = charName + "<br>" + charRealm;
+            var lText = "Squatticus" + "<br>" + "Wyremrest Accord";
+            var rText = charName + "<br>" + charRealm;
+			document.getEelementById("leftPlayerText").innerHTML = lText;
+			document.getEelementById("rightPlayerText").innerHTML = rText;
             /**
              * END OF CHARACTER PICTURE LOGIC
              */
