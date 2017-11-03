@@ -52,7 +52,7 @@ h2 {
 	
 }
 
-.imgRightOverlay {
+#imgRightOverlay {
 	position: absolute;
 	bottom: 0;
 	left: 100%;
@@ -87,7 +87,7 @@ h2 {
 	text-align: center;
 }
 
-.imgLeftOverlay {
+#imgLeftOverlay {
 	position: absolute;
 	bottom: 0;
 	right: 100%;
@@ -100,7 +100,6 @@ h2 {
 
 #rightside {
     background-image: url(http://media.blizzard.com/wow/warlords-of-draenor-6y1fz/models/undead/male/image-2-full.jpg);
-
 }
 
 #leftside{
@@ -108,12 +107,12 @@ h2 {
 	transform: rotateX(150deg);
 }
 
-#rightside:hover .imgRightOverlay {
+#rightside:hover #imgRightOverlay {
 	width: 100%;
 	left: 0;
 }
 
-#lefttside:hover .imgRightOverlay {
+#lefttside:hover #imgRightOverlay {
 	width: 100%;
 	left: 0;
 }
